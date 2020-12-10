@@ -1,0 +1,6 @@
+[submodule "BikeTrackerMicrocontrollerCode/lib/TeensyOS"]
+	path = BikeTrackerMicrocontrollerCode/lib/TeensyOS
+	url = git@github.com:william-redenbaugh/TeensyOS.git
+[submodule "BikeTrackerMicrocontrollerCode/lib/Arduino-SIM800L-driver"]
+	path = BikeTrackerMicrocontrollerCode/lib/Arduino-SIM800L-driver
+	url = git@github.com:ostaquet/Arduino-SIM800L-driver.git
