@@ -15,7 +15,7 @@ static uint8_t imu_stack_space[512];
 /*!
 *   @brief Function declarations
 */
-static void imud_thread(void *parameters); 
+static void imu_thread(void *parameters); 
 void start_imu_module(void);
 void spinlock_imu(void); 
 
