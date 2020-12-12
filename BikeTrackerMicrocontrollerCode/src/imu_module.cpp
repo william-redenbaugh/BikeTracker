@@ -23,8 +23,18 @@ void spinlock_imu(void);
 *   @brief Thread function that directly interfaces with the imu module
 */
 static void imu_thread(void *parameters){
+    mpu_init_status_t init_status = init_mpu6050(MPU6050_DEFAULT_I2C_ADDR, ACCELEROMETER_16G, GYRO_500_DEGREE_SECCOND); 
     
-    wait_imu_module.signal(THREAD_SIGNAL_0); 
+    // If we are able to interface with the device successfully. 
+    switch(init_status){
+    case(MPU6050_INIT_SUCCESS):
+        wait_imu_module.signal(THREAD_SIGNAL_0); 
+        break; 
+        
+    default: 
+        break; 
+    }
+
     for(;;){
         os_thread_sleep_ms(100); 
     }
