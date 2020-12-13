@@ -4,3 +4,6 @@
 [submodule "BikeTrackerMicrocontrollerCode/lib/Arduino-SIM800L-driver"]
 	path = BikeTrackerMicrocontrollerCode/lib/Arduino-SIM800L-driver
 	url = git@github.com:ostaquet/Arduino-SIM800L-driver.git
+[submodule "BikeTrackerMicrocontrollerCode/lib/TinyGPS"]
+	path = BikeTrackerMicrocontrollerCode/lib/TinyGPS
+	url = git@github.com:mikalhart/TinyGPS.git

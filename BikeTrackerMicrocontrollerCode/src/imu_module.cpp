@@ -25,7 +25,7 @@ void spinlock_imu(void);
 static void imu_thread(void *parameters){
     mpu_init_status_t init_status = init_mpu6050(MPU6050_DEFAULT_I2C_ADDR, ACCELEROMETER_16G, GYRO_500_DEGREE_SECCOND); 
     
-    // If we are able to interface with the device successfully. 
+    // If we are able to interface with the device successfully.  
     switch(init_status){
     case(MPU6050_INIT_SUCCESS):
         wait_imu_module.signal(THREAD_SIGNAL_0); 
